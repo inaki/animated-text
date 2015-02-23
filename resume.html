@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/font-awesome-animation.css">
+  <style>
+  /* Sticky footer styles
+  -------------------------------------------------- */
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  .navbar {
+    background-color: SandyBrown;
+  }
+  .navbar .navbar-brand{
+    color: white;
+  }
+  .fa-heart {
+    color: tomato;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: LightSteelBlue;
+  }
+
+
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+
+  body > .container {
+    padding: 60px 15px 0;
+  }
+  .container .text-muted {
+    margin: 20px 0;
+  }
+
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  /* Main styles */
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+    .text {
+      fill: none;
+      stroke-width: 6;
+      stroke-linejoin: round;
+      stroke-dasharray: 70 330;
+      stroke-dashoffset: 0;
+      -webkit-animation: stroke 6s infinite linear;
+      animation: stroke 6s infinite linear;
+    }
+
+    .text:nth-child(5n + 1) {
+      stroke: #FA8072;
+      -webkit-animation-delay: -1.2s;
+      animation-delay: -1.2s;
+    }
+    .text:nth-child(5n + 2) {
+      stroke: #FDAA91;
+      -webkit-animation-delay: -2.4s;
+      animation-delay: -2.4s;
+    }
+
+    .text:nth-child(5n + 3) {
+      stroke: #959EDB;
+      -webkit-animation-delay: -3.6s;
+      animation-delay: -3.6s;
+    }
+
+    .text:nth-child(5n + 4) {
+      stroke: yellow;
+      -webkit-animation-delay: -4.8s;
+      animation-delay: -4.8s;
+    }
+
+    .text:nth-child(5n + 5) {
+      stroke: white;
+      -webkit-animation-delay: -6s;
+      animation-delay: -6s;
+    }
+
+    @-webkit-keyframes stroke {
+    100% {
+      stroke-dashoffset: -400;
+    }
+    }
+
+      @keyframes stroke {
+      100% {
+        stroke-dashoffset: -400;
+      }
+    }
+
+    .resume {
+      background: Silver;
+      height: 300px;
+      background-size: .2em 100%;
+      font: 24.5em/1 Open Sans, Impact;
+      text-transform: uppercase;
+      margin: 0;
+      -webkit-transition:width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+      transition:width 2s, height 2s, background-color 2s, transform 2s;
+    }
+
+    .resume:hover {
+      background: #474D81;
+    }
+
+    svg {
+      position: absolute;
+      width: 100%;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+
+
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Resume Animated Font</a>
+          </div>
+
+        </div>
+      </nav>
+
+      <!-- Begin page content -->
+      <div class="container">
+        <div class="page-header">
+          <h1>Some Code to grab and use with bootstrap pages.</h1>
+        </div>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est iste cumque et ipsum cum autem minus totam quam vero hic. Sunt quo iste minus numquam, voluptatem eveniet dolorem obcaecati, accusamus.</p>
+        <p>Made with <i class="fa fa-heart faa-pulse animated"></i> by  <a href="inaki.github.io">iñaki</a> to the mighty <a href="ainsleywagon.github.io">Ainsley Wagon</a>.</p>
+      </div>
+
+      <div class="resume">
+        <a href="">
+          <svg viewBox="0 0 2000 1000">
+
+            <!-- Symbol -->
+            <symbol id="s-text">
+              <text text-anchor="middle"
+                    x="50%" y="50%" dy=".35em">
+                RéSUMé
+              </text>
+            </symbol>
+
+            <!-- Duplicate symbols -->
+            <use xlink:href="#s-text" class="text"></use>
+            <use xlink:href="#s-text" class="text"></use>
+            <use xlink:href="#s-text" class="text"></use>
+            <use xlink:href="#s-text" class="text"></use>
+            <use xlink:href="#s-text" class="text"></use>
+
+          </svg>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <p class="text-muted">Pie de página.</p>
+        </div>
+      </footer>
+
+</body>
+</html>
